@@ -15,6 +15,7 @@ array[Dish] of int: satisf;
 array[Dish] of int: size;
 
 array[Dish] of var int: amt;
+
 constraint forall(i in Dish)(amt[i] >= 0);
 constraint sum(i in Dish)(size[i] * amt[i]) <= capacity;
 
